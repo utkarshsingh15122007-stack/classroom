@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thread & Form | Fashion Design Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Poppins',sans-serif;background:#020617;color:#fff}
+
+    nav{position:fixed;top:0;width:100%;padding:20px 40px;display:flex;justify-content:space-between;align-items:center;background:rgba(0,0,0,0.6);backdrop-filter:blur(10px);z-index:1000}
+    nav h3{color:#22c55e}
+
+    header{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:url('https://images.unsplash.com/photo-1498050108023-c5249f4df085') center/cover no-repeat;position:relative}
+    header::before{content:'';position:absolute;inset:0;background:rgba(0,0,0,0.75)}
+    header *{position:relative}
+
+    h1{font-size:60px;max-width:900px}
+    .gradient{background:linear-gradient(90deg,#22c55e,#60a5fa);-webkit-background-clip:text;color:transparent}
+
+    .btn{padding:14px 30px;background:#22c55e;color:#000;border-radius:10px;text-decoration:none;font-weight:bold;display:inline-block;margin-top:20px}
+
+    section{padding:120px 20px;text-align:center}
+    h2{font-size:40px;margin-bottom:20px}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;margin-top:40px}
+
+    .card{background:rgba(255,255,255,0.05);padding:30px;border-radius:15px;transition:0.3s}
+    .card:hover{transform:translateY(-10px);box-shadow:0 0 20px rgba(34,197,94,0.5)}
+
+    .card img{width:100%;border-radius:10px;margin-bottom:15px;transition:0.4s}
+    .card:hover img{transform:scale(1.05)}
+
+    .price-card{border:2px solid #22c55e}
+
+    .stats{display:flex;justify-content:center;gap:40px;flex-wrap:wrap;margin-top:40px}
+    .stat{font-size:28px;font-weight:bold}
+
+    input,textarea{width:100%;padding:12px;margin:10px 0;border:none;border-radius:8px}
+
+    footer{padding:40px;text-align:center;color:#64748b}
+
+    /* Premium additions */
+    .highlight{color:#22c55e;font-weight:bold}
+
+    .cta-banner{
+      background:linear-gradient(90deg,#22c55e,#60a5fa);
+      color:#000;
+      padding:60px 20px;
+      border-radius:20px;
+      margin:40px;
+      text-align:center;
+    }
+
+    .cta-banner h2{margin-bottom:10px}
+
+    .floating-btn{
+      position:fixed;
+      bottom:20px;
+      right:20px;
+      background:#25D366;
+      color:#fff;
+      padding:15px 20px;
+      border-radius:50px;
+      text-decoration:none;
+      font-weight:bold;
+      box-shadow:0 0 15px rgba(0,0,0,0.4);
+    }
+
+    .badge{
+      display:inline-block;
+      background:#22c55e;
+      color:#000;
+      padding:5px 10px;
+      border-radius:8px;
+      font-size:12px;
+      margin-bottom:10px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <h3>Thread & Form</h3>
+    <a href="#contact" class="btn">Contact Us</a>
+  </nav>
+
+  <header>
+    <h1 class="gradient">I design clothes that bring your ideas and personal style to life</h1>
+    <p>Creative • Comfortable • Made for You</p>
+    <a href="#contact" class="btn">✦ Explore the Collection</a>
+  </header>
+
+  <section>
+    <h2>Design Highlights</h2>
+    <div class="stats">
+      <div class="stat">✂ 25+ Design Sketches</div>
+      <div class="stat">🧵 15+ Fabric Ideas</div>
+      <div class="stat">⭐ 5 Style Themes</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>About Me</h2>
+    <p style="max-width:800px;margin:auto;margin-top:20px;line-height:1.7;">
+      My name is <strong>Utkarsh Singh</strong>. I am studying
+      <strong>B.Tech in Computer Science and Engineering (AI &amp; ML)</strong>.
+      My roll number is <strong>267186</strong>. I enjoy exploring fashion,
+      clothing styles, and creative design ideas.
+      This page is a place to share outfit ideas, colors, fabrics, and styles that inspire me.
+      <br><br>
+      I am learning how design can combine creativity, technology, and personal expression.
+    </p>
+  </section>
+
+  <section>
+    <h2>What Makes Our Style</h2>
+    <div class="grid">
+      <div class="card">✂ Thoughtful Details</div>
+      <div class="card">🎯 Personal Style</div>
+      <div class="card">💡 Fresh Design Ideas</div>
+      <div class="card">🧵 Comfortable Materials</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Design Services</h2>
+    <div class="grid">
+      <div class="card"><span class="badge">Popular</span><br>👗 Custom Outfit Concepts</div>
+      <div class="card">🎨 Clothing Sketches</div>
+      <div class="card">🧵 Fabric and Color Planning</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Our Design Process</h2>
+    <div class="grid">
+      <div class="card">1️⃣ Share your style idea</div>
+      <div class="card">2️⃣ Sketch shapes and choose fabric</div>
+      <div class="card">3️⃣ Refine the final look</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Design Collection</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="People browsing fashion in a clothing shop">
+        <h3>Everyday Wear</h3>
+        <a href="demo1.html" target="_blank" class="btn">View Idea</a>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Colorful clothing arranged for an outfit">
+        <h3>Colorful Layers</h3>
+        <a href="demo2.html" target="_blank" class="btn">View Idea</a>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Fashion outfit inspiration">
+        <h3>Evening Style</h3>
+        <a href="demo3.html" target="_blank" class="btn">View Idea</a>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="A carefully styled clothing look">
+        <h3>Classic Look</h3>
+        <a href="#contact" class="btn">View Idea</a>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Modern fashion outfit inspiration">
+        <h3>Modern Style</h3>
+        <a href="#contact" class="btn">View Idea</a>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Fashion model wearing a designed outfit">
+        <h3>Street Fashion</h3>
+        <a href="#contact" class="btn">View Idea</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Design Packages</h2>
+    <div class="grid">
+      <div class="card price-card">
+        <h3>Starter Sketch</h3>
+        <p>One outfit idea</p>
+        <p>Sketch and color palette</p>
+      </div>
+      <div class="card price-card">
+        <h3>Full Look</h3>
+        <p>Complete outfit concept</p>
+        <p>Sketch, fabric, and details</p>
+      </div>
+    </div>
+    <p>Ask us about materials and custom design options.</p>
+  </section>
+
+  <section>
+    <h2>Style Notes</h2>
+    <div class="grid">
+      <div class="card">⭐ "The colors and details feel just right."<br>- A fashion lover</div>
+      <div class="card">🔥 "I love how comfortable the outfit looks."<br>- A happy customer</div>
+      <div class="card">💯 "The sketches helped me picture the design."<br>- A design student</div>
+      <div class="card">🚀 "A fresh idea for a special occasion."<br>- A style enthusiast</div>
+      <div class="card">💼 "The fabric suggestions were very helpful."<br>- A customer</div>
+      <div class="card">⭐ "Simple, elegant, and easy to wear."<br>- A fashion fan</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Fashion FAQs</h2>
+    <div class="grid">
+      <div class="card">❓ What can you design?<br>👉 Everyday and occasion wear</div>
+      <div class="card">❓ Can I choose the colors?<br>👉 Yes, we can plan a color palette</div>
+      <div class="card">❓ Can I share my own idea?<br>👉 Yes, sketches and references are welcome</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="cta-banner">
+      <h2>✦ Ready to find your next favorite look?</h2>
+      <p>Let's turn your fashion idea into a design.</p>
+      <a href="#contact" class="btn">Start a Design</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact the Studio</h2>
+    <p style="margin-bottom:20px;">
+      📧 Email us: <strong style="color:#22c55e;">hello@threadandform.example</strong>
+    </p>
+
+    <form action="#contact" method="get">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Tell us about your design idea" required></textarea>
+      <button class="btn">Send Design Idea</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 Thread & Form | Fashion Design Studio</p>
+  </footer>
+
+  <a href="https://wa.me/" target="_blank" class="floating-btn">💬 Chat with us</a>
+</body>
+</html>
